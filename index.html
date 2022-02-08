@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css">
+    <title>Document</title>
+
+</head>
+<body>
+    
+   <nav>
+       <ul class="kulso">
+           <li class="menu1"><a href="#">menu</a></li>
+           <li class="le menu2"><a href="#">menu</a></li>
+                <ul class="leTartalom">
+                    <li><a href="#">legord</a></li>
+                    <li><a href="#">legord</a></li>
+                </ul>
+           <li class="menu3"><a href="#">menu</a></li>
+       </ul>
+   </nav>
+   <div class="container">
+        <div class="galery">
+            <img class="kis1" src="kepek/kep1.jpg" alt="">
+            <img class="kis2" src="kepek/kep2.jpg" alt="">
+            <img class="kis3" src="kepek/kep3.jpg" alt="">
+        </div>
+        <div class="nagykep">
+        <img class="kozep1" src="kepek/kep1.jpg" alt="">
+        <img class="kozep2" src="kepek/kep2.jpg" alt="">
+        <img class="kozep3" src="kepek/kep3.jpg" alt="">
+        </div>
+    
+   </div>
+   <div class="infopanel">
+       <button onclick="myFunction()">X</button>
+       <div class="valaszt">
+        <form action="/action_page.php">
+            <fieldset>
+              <legend>Tetszik a Position tulajdonság?</legend>
+              <input type="radio" id="igen" name="fav_language" value="HTML">
+              <label for="html">Igen</label><br>
+              <input type="radio" id="nem" name="fav_language" value="CSS">
+              <label for="css">Nem</label><br>
+            </fieldset>
+          </form>
+       </div>
+   </div>
+   <script>
+    function myFunction() {
+      var x = document.getElementsByClassName("infopanel")[0];
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+
+</body>
+</html>

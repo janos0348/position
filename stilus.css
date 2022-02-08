@@ -1,0 +1,105 @@
+nav{
+    background-color: aliceblue;
+    height: 200px;
+    position: fixed;
+    top: 10px;
+}
+img{
+    width:  200px;
+    height: 200px;
+    border-radius: 10px;    
+}
+.kozep1, .kozep2, .kozep3{
+    display: none   ;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 300px;
+}
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 800px;
+    top: 300px
+}
+.galery{
+    grid-area: g;
+}
+.nagykep{
+    grid-area: n;
+}
+.le{
+    position: relative;
+
+}
+.leTartalom{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 225px;
+    background-color: red;
+    width: 150px;
+    text-decoration: none;
+}
+.kulso{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+ul{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.menu1, .menu2,.menu3{
+    list-style: none;
+
+    background-color: grey;
+    border-radius: 10px;
+    
+}
+a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    margin: 50px;
+        padding: 10px;
+}
+.le:hover{
+    background-color: blue;
+}
+.le:hover .leTartalom{
+
+        display: block!important;
+    }
+
+.kis1:hover .kozep1{
+    display: block;  
+}
+.kis2:hover .kozep2{
+    display: block;  
+}
+.kis3:hover .kozep3{
+    display: block;  
+}
+.infopanel button{
+    color: red;
+    background-color: grey;
+    border-radius: 10px;
+    position: relative;
+    left: 200px;
+    bottom: 30px;
+    font-size: 20px;
+    margin: 20px;
+
+}
+.infopanel{
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 30px;
+}
